@@ -1,0 +1,38 @@
+#
+# docker-compose.windows.yml — Windows Docker Desktop compatible
+#
+# Differences from docker-compose.yml:
+#   - Removes `network_mode: host` (not supported on Docker Desktop for Windows)
+#   - Uses explicit port mappings instead
+#   - Uses Windows-style volume path for ~/.galahad
+#
+# Usage:
+#   docker compose -f docker-compose.windows.yml up -d
+#
+services:
+  gateway:
+    image: galahad-mamad/galahad-agent:latest
+    container_name: galahad
+    restart: unless-stopped
+    volumes:
+      - ${USERPROFILE}/.galahad:/opt/data
+    environment:
+      - GALAHAD_UID=10000
+      - GALAHAD_GID=10000
+    command: ["gateway", "run"]
+
+  dashboard:
+    image: galahad-mamad/galahad-agent:latest
+    container_name: galahad-dashboard
+    restart: unless-stopped
+    depends_on:
+      - gateway
+    volumes:
+      - ${USERPROFILE}/.galahad:/opt/data
+    environment:
+      - GALAHAD_UID=10000
+      - GALAHAD_GID=10000
+      - GALAHAD_DASHBOARD_HOST=0.0.0.0
+    ports:
+      - "127.0.0.1:9119:9119"
+    command: ["dashboard", "--host", "0.0.0.0", "--port", "9119", "--no-open", "--insecure"]

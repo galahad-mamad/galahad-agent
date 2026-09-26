@@ -1,0 +1,77 @@
+# Galahad Agent skin — Green Theme (Dark)
+# Themes CLI, TUI, and Desktop GUI from one file.
+# Drop into <galahad-home>/skins/galahad.yaml then: galahad config set display.skin galahad
+
+name: galahad
+description: "Galahad Agent — Deep forest green, terminal-native, high contrast"
+
+colors:
+  # Base surface — deep charcoal with green tint
+  background: "#0d1b12"
+
+  # Brand accent — vivid emerald, WCAG AA on background (~6.2:1)
+  ui_accent: "#00e676"
+  banner_accent: "#00e676"
+
+  # Text hierarchy
+  banner_title: "#00ff88"    # headings / primary
+  banner_text: "#b8e6c8"     # body foreground
+  ui_text: "#b8e6c8"
+  banner_dim: "#5a8a6a"      # muted / secondary
+  banner_border: "#1a3a26"
+  ui_border: "#1a3a26"
+
+  # Semantic status
+  ui_ok: "#00e676"
+  ui_warn: "#ffb300"
+  ui_error: "#ff4444"
+
+  # CLI / TUI chrome
+  prompt: "#00ff88"
+  input_rule: "#00e676"
+  response_border: "#00ff88"
+  status_bar_bg: "#061209"
+  status_bar_text: "#b8e6c8"
+  status_bar_good: "#00e676"
+  status_bar_warn: "#ffb300"
+  status_bar_critical: "#ff4444"
+  session_label: "#00ff88"
+  session_border: "#1a3a26"
+
+  # Thinking / reasoning
+  ui_thinking: "#5a8a6a"
+
+  # Tool call marker
+  ui_tool: "#00e676"
+
+  # Diff colors
+  diff_added: "#00e676"
+  diff_removed: "#ff4444"
+  diff_added_word: "#00ff88"
+  diff_removed_word: "#ff6666"
+
+  # Syntax highlighting
+  syntax_string: "#00e676"
+  syntax_number: "#ffb300"
+  syntax_keyword: "#00ff88"
+  syntax_comment: "#5a8a6a"
+
+  # Completion menu
+  completion_menu_bg: "#0d1b12"
+  completion_menu_current_bg: "#1a3a26"
+  completion_menu_meta_bg: "#0d1b12"
+
+# Optional flavor
+branding:
+  agent_name: "Galahad Agent"
+  prompt_symbol: "❯"
+  welcome: "🛡️  Galahad Agent ready — mobile repair • tutor • coding"
+  goodbye: "شاد باشید — Galahad Agent"
+  help_header: "(^_^)? Galahad Commands"
+
+tool_prefix: "┊"
+
+# Spinner frames (optional)
+spinner:
+  frames: ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
+  interval_ms: 80
