@@ -51,7 +51,7 @@ describe('DEFAULT_THEME', () => {
   it('has color palette', async () => {
     const { DEFAULT_THEME } = await importThemeWithCleanEnv()
 
-    expect(DEFAULT_THEME.color.primary).toBe('#FFD700')
+    expect(DEFAULT_THEME.color.primary).toBe('#37d0b0')
     expect(DEFAULT_THEME.color.error).toBe('#ef5350')
   })
 })
@@ -60,10 +60,10 @@ describe('LIGHT_THEME', () => {
   it('avoids bright-yellow accents unreadable on white backgrounds (#11300)', async () => {
     const { LIGHT_THEME } = await importThemeWithCleanEnv()
 
-    expect(LIGHT_THEME.color.primary).not.toBe('#FFD700')
-    expect(LIGHT_THEME.color.accent).not.toBe('#FFBF00')
-    expect(LIGHT_THEME.color.muted).not.toBe('#B8860B')
-    expect(LIGHT_THEME.color.statusWarn).not.toBe('#FFD700')
+    expect(LIGHT_THEME.color.primary).not.toBe('#37d0b0')
+    expect(LIGHT_THEME.color.accent).not.toBe('#2bb397')
+    expect(LIGHT_THEME.color.muted).not.toBe('#16695b')
+    expect(LIGHT_THEME.color.statusWarn).not.toBe('#37d0b0')
   })
 
   it('keeps the same shape as DARK_THEME', async () => {
@@ -284,19 +284,19 @@ describe('fromSkin', () => {
 
     const theme = fromSkin(
       {
-        banner_accent: '#FFBF00',
-        banner_border: '#CD7F32',
-        banner_dim: '#B8860B',
+        banner_accent: '#2bb397',
+        banner_border: '#1e8a76',
+        banner_dim: '#16695b',
         banner_text: '#FFF8DC',
-        banner_title: '#FFD700',
+        banner_title: '#37d0b0',
         prompt: '#FFF8DC'
       },
       {}
     )
 
-    expect(theme.color.primary).toBe('#FFD700')
-    expect(theme.color.accent).toBe('#FFBF00')
-    expect(theme.color.border).toBe('#CD7F32')
+    expect(theme.color.primary).toBe('#37d0b0')
+    expect(theme.color.accent).toBe('#2bb397')
+    expect(theme.color.border).toBe('#1e8a76')
     expect(theme.color.muted).toBe('ansi256(245)')
     expect(theme.color.text).toBe('ansi256(136)')
     expect(theme.color.prompt).toBe('ansi256(136)')
@@ -435,7 +435,7 @@ describe('derived tone ladder', () => {
 
     const cases: Array<[string, string, string]> = [
       [dark.DARK_THEME.color.muted, '#CC9B1F', 'dark muted'],
-      [dark.DARK_THEME.color.label, '#DAA520', 'dark label'],
+      [dark.DARK_THEME.color.label, '#4fc9b0', 'dark label'],
       [dark.DARK_THEME.color.statusFg, '#C0C0C0', 'dark statusFg'],
       [dark.DARK_THEME.color.completionBg, '#1a1a2e', 'dark surface'],
       [dark.DARK_THEME.color.completionCurrentBg, '#333355', 'dark chip'],

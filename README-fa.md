@@ -5,7 +5,7 @@
 ## نصب
 
 ```bash
-git clone https://github.com/YOUR_REPO/galahad-agent.git
+git clone https://github.com/galahad-mamad/galahad-agent.git
 cd galahad-agent
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e .

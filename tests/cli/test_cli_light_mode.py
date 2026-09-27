@@ -72,7 +72,7 @@ class TestLightModeRemap:
         # Force the detect cache to True for this test.
         cli_mod._LIGHT_MODE_CACHE = True
         assert cli_mod._maybe_remap_for_light_mode("#FFF8DC") == "#1A1A1A"
-        assert cli_mod._maybe_remap_for_light_mode("#FFD700") == "#9A6B00"
+        assert cli_mod._maybe_remap_for_light_mode("#37d0b0") == "#9A6B00"
 
 
 
@@ -98,7 +98,7 @@ class TestSkinConfigHook:
         cli_mod._LIGHT_MODE_CACHE = True
         skin = SkinConfig(
             name="test",
-            colors={"banner_text": "#FFF8DC", "response_border": "#FFD700"},
+            colors={"banner_text": "#FFF8DC", "response_border": "#37d0b0"},
         )
         # The wrapper kicks in at get_color, not at construction time.
         assert skin.get_color("banner_text") == "#1A1A1A"

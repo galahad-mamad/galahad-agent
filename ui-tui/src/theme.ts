@@ -368,23 +368,23 @@ export function buildPalette(seeds: ThemeSeeds, isLight: boolean): ThemeColors {
 }
 
 export const DARK_SEEDS: ThemeSeeds = {
-  accent: '#FFBF00',
+  accent: '#2bb397',
   // The classic Galahad navy surfaces are IDENTITY, not derivation drift —
   // keep them as explicit fill seeds (the ladder derives them for skins
   // that don't care).
   activeRow: '#333355',
   bg: '#101014',
-  border: '#CD7F32',
+  border: '#1e8a76',
   error: '#ef5350',
   ok: '#4caf50',
-  primary: '#FFD700',
+  primary: '#37d0b0',
   prompt: '#FFF8DC',
   selection: '#3a3a55',
   shellDollar: '#4dabf7',
   statusBad: '#FF8C00',
   statusCritical: '#FF6B6B',
   statusGood: '#8FBC8F',
-  statusWarn: '#FFD700',
+  statusWarn: '#37d0b0',
   surface: '#1a1a2e',
   text: '#FFF8DC',
   warn: '#ffa726'
@@ -465,7 +465,7 @@ export const LIGHT_THEME: Theme = {
 // terminal window compositing over a light editor, where xterm applies NO
 // contrast lift of its own (there is no solid bg to measure against) — the
 // beloved classic look is the authored palette rendered essentially RAW:
-// vivid #FFD700 gold (~1.36:1), not a WCAG-darkened mustard. So the light
+// vivid #37d0b0 gold (~1.36:1), not a WCAG-darkened mustard. So the light
 // floor is a near-invisible rescue only (catches cream #FFF8DC at 1.08 but
 // leaves the golds untouched). Pixel-sampled target: #F5C242 (L61 S90),
 // which the previous 1.45 floor crushed to #867000 (L26) — the reported mud.
@@ -591,7 +591,7 @@ export interface ThemeTones {
  * "reproduces the original hand-tuned tones" test for the contract):
  *
  *   dark muted  #CC9B1F ≈ desaturate(mix(accent, bg, .19), .16)  (err 3)
- *   dark label  #DAA520 ≈ desaturate(mix(accent, bg, .13), .16)  (err 3)
+ *   dark label  #4fc9b0 ≈ desaturate(mix(accent, bg, .13), .16)  (err 3)
  *   dark status #C0C0C0 = grayOf(mix(text, bg, .24))             (err 0)
  *   light muted #946C08 ≈ desaturate(accent, .05)                (err 2)
  *   light label #8E6B13 ≈ desaturate(mix(accent, text, .03), .15) (err 2)

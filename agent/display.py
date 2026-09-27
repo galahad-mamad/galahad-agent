@@ -1067,20 +1067,19 @@ class KawaiiSpinner:
     }
 
     KAWAII_WAITING = [
-        "(｡◕‿◕｡)", "(◕‿◕✿)", "٩(◕‿◕｡)۶", "(✿◠‿◠)", "( ˘▽˘)っ",
-        "♪(´ε` )", "(◕ᴗ◕✿)", "ヾ(＾∇＾)", "(≧◡≦)", "(★ω★)",
+        "[ ⚔ ]", "[ ▲ ]", "[ ◆ ]", "[ ⛨ ]", "[ ✦ ]",
+        "[ ⚖ ]", "[ ◈ ]", "[ ⟁ ]", "[ ✧ ]", "[ ⌘ ]",
     ]
 
     KAWAII_THINKING = [
-        "(｡•́︿•̀｡)", "(◔_◔)", "(¬‿¬)", "( •_•)>⌐■-■", "(⌐■_■)",
-        "(´･_･`)", "◉_◉", "(°ロ°)", "( ˘⌣˘)♡", "ヽ(>∀<☆)☆",
-        "٩(๑❛ᴗ❛๑)۶", "(⊙_⊙)", "(¬_¬)", "( ͡° ͜ʖ ͡°)", "ಠ_ಠ",
+        "[ ⌁ ]", "[ ◫ ]", "[ ⧉ ]", "[ ≡ ]", "[ ⋔ ]",
+        "[ ⌗ ]", "[ ▤ ]", "[ ⧗ ]", "[ ⟒ ]", "[ ⍟ ]",
     ]
 
     THINKING_VERBS = [
-        "pondering", "contemplating", "musing", "cogitating", "ruminating",
-        "deliberating", "mulling", "reflecting", "processing", "reasoning",
-        "analyzing", "computing", "synthesizing", "formulating", "brainstorming",
+        "forging", "surveying", "marshalling", "calibrating", "charting",
+        "devising", "assaying", "tracking", "analyzing", "computing",
+        "synthesizing", "formulating", "strategizing", "mapping", "sifting",
     ]
 
     @classmethod
