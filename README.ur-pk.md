@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Galahad Agent" width="100%">
 </p>
 
-# ہرمیس ایجنٹ ☤ (Galahad Agent)
+# ہرمیس ایجنٹ ⚔ (Galahad Agent)
 
 <p align="center">
   <a href="https://galahad-mamad.github.io/docs/"><img src="https://img.shields.io/badge/Docs-galahad--agent.galahad.dev-FFD700?style=for-the-badge" alt="Documentation"></a>

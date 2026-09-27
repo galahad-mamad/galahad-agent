@@ -2335,7 +2335,7 @@ def _cmd_update_check(branch: str = "main", *, branch_explicit: bool = False):
         if head_sha and target_sha and head_sha == target_sha:
             print("✓ Already up to date.")
         else:
-            print(f"⚕ Update available (behind {compare_branch}).")
+            print(f"⚔ Update available (behind {compare_branch}).")
             from galahad_cli.config import recommended_update_command
 
             print(f"  Run '{recommended_update_command()}' to install.")
@@ -2354,7 +2354,7 @@ def _cmd_update_check(branch: str = "main", *, branch_explicit: bool = False):
         print("✓ Already up to date.")
     else:
         commits_word = "commit" if behind == 1 else "commits"
-        print(f"⚕ Update available: {behind} {commits_word} behind {compare_branch}.")
+        print(f"⚔ Update available: {behind} {commits_word} behind {compare_branch}.")
         from galahad_cli.config import recommended_update_command
 
         print(f"  Run '{recommended_update_command()}' to install.")
@@ -3596,7 +3596,7 @@ def _cmd_update_impl(args, gateway_mode: bool):
             logger.debug("Could not read updates.non_interactive_local_changes: %s", exc)
             discard_local_changes = False
 
-    print("⚕ Updating Galahad Agent...")
+    print("⚔ Updating Galahad Agent...")
     print()
 
     # On Windows, abort early if another galahad.exe is holding the venv shim

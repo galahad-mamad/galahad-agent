@@ -2,7 +2,7 @@
   <img src="assets/banner.png" alt="Galahad Agent" width="100%">
 </p>
 
-# Galahad Agent ☤
+# Galahad Agent ⚔
 <p align="center">
   <a href="https://instagram.com/galahad_mamad"><img src="https://img.shields.io/badge/Instagram-@galahad__mamad-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
   <a href="https://github.com/galahad-mamad/galahad-agent/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT"></a>

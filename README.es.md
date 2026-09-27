@@ -2,7 +2,7 @@
   <img src="assets/banner.png" alt="Galahad Agent" width="100%">
 </p>
 
-# Galahad Agent ☤
+# Galahad Agent ⚔
 <p align="center">
   <a href="https://galahad-mamad.github.io/">Galahad Agent</a> | <a href="https://galahad-mamad.github.io/">Galahad Desktop</a>
 </p>

@@ -2436,7 +2436,7 @@ def _launch_tui(
         from galahad_cli.relaunch import relaunch
 
         print()
-        print("⚕ Launching update...")
+        print("⚔ Launching update...")
         print()
         relaunch(["update"], preserve_inherited=False)
 
@@ -2767,7 +2767,7 @@ def cmd_whatsapp(args):
     from galahad_constants import find_node_executable, with_galahad_node_path
 
     print()
-    print("⚕ WhatsApp Setup")
+    print("⚔ WhatsApp Setup")
     print("=" * 50)
 
     # ── Step 1: Choose mode ──────────────────────────────────────────────
@@ -2978,14 +2978,14 @@ def cmd_whatsapp(args):
             print("    2. Send a message to the bot's WhatsApp number")
             print("    3. The agent will reply automatically")
             print()
-            print("  Tip: Agent responses are prefixed with '⚕ Galahad Agent'")
+            print("  Tip: Agent responses are prefixed with '⚔ Galahad Agent'")
         else:
             print("  Next steps:")
             print("    1. Start the gateway:  galahad gateway")
             print("    2. Open WhatsApp → Message Yourself")
             print("    3. Type a message — the agent will reply")
             print()
-            print("  Tip: Agent responses are prefixed with '⚕ Galahad Agent'")
+            print("  Tip: Agent responses are prefixed with '⚔ Galahad Agent'")
             print("  so you can tell them apart from your own messages.")
         print()
         print("  Or install as a service: galahad gateway install")
@@ -3322,6 +3322,7 @@ def select_provider_and_model(args=None):
         ]
     else:
         _visible_slugs = [p.slug for p in CANONICAL_PROVIDERS]
+    _visible_slugs = [s for s in _visible_slugs if s != "galahad"]  # hosted portal not offered
     grouped_rows = group_providers(_visible_slugs)
 
     # The group/slug that should be pre-selected: the active provider's group
@@ -10593,7 +10594,7 @@ def _build_provider_choices() -> list[str]:
     except Exception:
         # Fallback: static list guarantees the CLI always works
         return [
-            "auto", "openrouter", "galahad", "openai-codex", "xai-oauth", "copilot-acp", "copilot",
+            "auto", "openrouter", "openai-codex", "xai-oauth", "copilot-acp", "copilot",
             "anthropic", "gemini", "vertex", "xai", "bedrock", "azure-foundry",
             "ollama-cloud", "huggingface", "zai", "kimi-coding", "kimi-coding-cn",
             "stepfun", "minimax", "minimax-cn", "kilocode", "novita", "xiaomi", "arcee",

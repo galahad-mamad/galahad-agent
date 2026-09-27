@@ -183,7 +183,7 @@ def is_interactive_stdin() -> bool:
 def print_noninteractive_setup_guidance(reason: str | None = None) -> None:
     """Print guidance for headless/non-interactive setup flows."""
     print()
-    print(color("⚕ Galahad Setup — Non-interactive mode", Colors.CYAN, Colors.BOLD))
+    print(color("⚔ Galahad Setup — Non-interactive mode", Colors.CYAN, Colors.BOLD))
     print()
     if reason:
         print_info(reason)
@@ -412,7 +412,6 @@ def _print_setup_summary(config: dict, galahad_home):
         print_warning("No inference provider is configured — Galahad cannot chat yet.")
         print_info("  Finish this one step with either of:")
         print_info("    galahad model            (pick any provider/model)")
-        print_info("    galahad setup --portal   (Galahad Portal OAuth, no API key)")
 
     # Tool availability summary
     print()
@@ -2876,7 +2875,7 @@ def _run_portal_one_shot(config: dict) -> None:
             Colors.MAGENTA,
         )
     )
-    print(color("│     ⚕ Galahad Setup — Galahad Portal (one-shot)             │", Colors.MAGENTA))
+    print(color("│     ⚔ Galahad Setup — Galahad Portal (one-shot)             │", Colors.MAGENTA))
     print(
         color(
             "└─────────────────────────────────────────────────────────┘",
@@ -3007,7 +3006,7 @@ def run_setup_wizard(args):
                         Colors.MAGENTA,
                     )
                 )
-                print(color(f"│     ⚕ Galahad Setup — {label:<34s} │", Colors.MAGENTA))
+                print(color(f"│     ⚔ Galahad Setup — {label:<34s} │", Colors.MAGENTA))
                 print(
                     color(
                         "└─────────────────────────────────────────────────────────┘",
@@ -3043,7 +3042,7 @@ def run_setup_wizard(args):
     )
     print(
         color(
-            "│             ⚕ Galahad Agent Setup Wizard                │", Colors.MAGENTA
+            "│             ⚔ Galahad Agent Setup Wizard                │", Colors.MAGENTA
         )
     )
     print(
@@ -3110,17 +3109,13 @@ def run_setup_wizard(args):
         setup_mode = prompt_choice(
             "How would you like to set up Galahad?",
             [
-                "Quick Setup (Galahad Portal) — free OAuth login, no API keys, model + tools (recommended)",
                 "Full setup — configure every provider, tool & option yourself (bring your own keys)",
                 "Blank Slate — everything off except the bare minimum; opt in to each capability",
             ],
             0,
         )
 
-        if setup_mode == 0:
-            _run_first_time_quick_setup(config, galahad_home, is_existing)
-            return
-        if setup_mode == 2:
+        if setup_mode == 1:
             _run_blank_slate_setup(config, galahad_home, is_existing)
             return
 

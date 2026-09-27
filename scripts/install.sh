@@ -212,7 +212,7 @@ print_banner() {
     echo ""
     echo -e "${MAGENTA}${BOLD}"
     echo "┌─────────────────────────────────────────────────────────┐"
-    echo "│             ⚕ Galahad Agent Installer                    │"
+    echo "│             ⚔ Galahad Agent Installer                    │"
     echo "├─────────────────────────────────────────────────────────┤"
     echo "│  An open source AI agent by Galahad.              │"
     echo "└─────────────────────────────────────────────────────────┘"

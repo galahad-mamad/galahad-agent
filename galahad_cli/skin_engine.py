@@ -26,38 +26,38 @@ All fields are optional. Missing values inherit from the ``default`` skin.
       background: "#0e0e12"               # App/base surface — the seed the TUI
                                           # status bar and the desktop GUI derive
                                           # their whole palette from (see below).
-      banner_border: "#CD7F32"            # Panel border color
-      banner_title: "#FFD700"             # Panel title text color
-      banner_accent: "#FFBF00"            # Section headers (Available Tools, etc.)
-      banner_dim: "#B8860B"               # Dim/muted text (separators, labels)
+      banner_border: "#1e8a76"            # Panel border color
+      banner_title: "#37d0b0"             # Panel title text color
+      banner_accent: "#2bb397"            # Section headers (Available Tools, etc.)
+      banner_dim: "#16695b"               # Dim/muted text (separators, labels)
       banner_text: "#FFF8DC"              # Body text (tool names, skill names)
-      ui_accent: "#FFBF00"               # General UI accent
-      ui_label: "#DAA520"                # UI labels (warm gold; teal clashed w/ default banner gold)
+      ui_accent: "#2bb397"               # General UI accent
+      ui_label: "#4fc9b0"                # UI labels (warm gold; teal clashed w/ default banner gold)
       ui_ok: "#4caf50"                   # Success indicators
       ui_error: "#ef5350"                # Error indicators
       ui_warn: "#ffa726"                 # Warning indicators
-      ui_tool: "#FFBF00"                 # Tool-call markers (● / spinner); falls back to ui_accent
+      ui_tool: "#2bb397"                 # Tool-call markers (● / spinner); falls back to ui_accent
       ui_thinking: "#CC9B1F"             # Reasoning/thinking text; falls back to banner_dim
       diff_added: "#dcffdc"              # Diff added-line background (TUI)
       diff_removed: "#ffdcdc"            # Diff removed-line background
       diff_added_word: "#248a3d"         # Diff added word-level foreground
       diff_removed_word: "#cf222e"       # Diff removed word-level foreground
-      syntax_string: "#FFBF00"           # Code strings; falls back to ui_accent
+      syntax_string: "#2bb397"           # Code strings; falls back to ui_accent
       syntax_number: "#FFF8DC"           # Code numbers; falls back to ui_text
-      syntax_keyword: "#CD7F32"          # Code keywords; falls back to ui_border
+      syntax_keyword: "#1e8a76"          # Code keywords; falls back to ui_border
       syntax_comment: "#CC9B1F"          # Code comments; falls back to banner_dim
       prompt: "#FFF8DC"                  # Prompt text color
-      input_rule: "#CD7F32"              # Input area horizontal rule
-      response_border: "#FFD700"         # Response box border (ANSI)
+      input_rule: "#1e8a76"              # Input area horizontal rule
+      response_border: "#37d0b0"         # Response box border (ANSI)
       status_bar_bg: "#1a1a2e"           # Status bar background
       status_bar_text: "#C0C0C0"         # Status bar default text
-      status_bar_strong: "#FFD700"       # Status bar highlighted text
+      status_bar_strong: "#37d0b0"       # Status bar highlighted text
       status_bar_dim: "#8B8682"          # Status bar separators/muted text
       status_bar_good: "#8FBC8F"         # Healthy context usage
-      status_bar_warn: "#FFD700"         # Warning context usage
+      status_bar_warn: "#37d0b0"         # Warning context usage
       status_bar_bad: "#FF8C00"          # High context usage
       status_bar_critical: "#FF6B6B"     # Critical context usage
-      session_label: "#DAA520"           # Session label color
+      session_label: "#4fc9b0"           # Session label color
       session_border: "#8B8682"          # Session ID dim color
       status_bar_bg: "#1a1a2e"          # TUI status/usage bar background
       voice_status_bg: "#1a1a2e"        # TUI voice status background
@@ -96,8 +96,8 @@ All fields are optional. Missing values inherit from the ``default`` skin.
     branding:
       agent_name: "Galahad Agent"          # Banner title, status display
       welcome: "Welcome message"          # Shown at CLI startup
-      goodbye: "Goodbye! ⚕"              # Shown on exit
-      response_label: " ⚕ Galahad "       # Response box header label
+      goodbye: "Goodbye! ⚔"              # Shown on exit
+      response_label: " ⚔ Galahad "       # Response box header label
       prompt_symbol: "❯"                 # Input prompt symbol (bare token; renderers add trailing space)
       help_header: "(^_^)? Commands"      # /help header text
 
@@ -118,7 +118,7 @@ USAGE
     from galahad_cli.skin_engine import get_active_skin, list_skins, set_active_skin
 
     skin = get_active_skin()
-    print(skin.colors["banner_title"])    # "#FFD700"
+    print(skin.colors["banner_title"])    # "#37d0b0"
     print(skin.get_branding("agent_name"))  # "Galahad Agent"
 
     set_active_skin("ares")               # Switch to built-in ares skin
@@ -205,28 +205,28 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
         # Dark-authored. Values match the TUI's DARK_THEME so the classic CLI
         # and the TUI render the same Galahad gold.
         "colors": {
-            "banner_border": "#CD7F32",
-            "banner_title": "#FFD700",
-            "banner_accent": "#FFBF00",
-            "banner_dim": "#B8860B",
+            "banner_border": "#1e8a76",
+            "banner_title": "#37d0b0",
+            "banner_accent": "#2bb397",
+            "banner_dim": "#16695b",
             "banner_text": "#FFF8DC",
-            "ui_accent": "#FFBF00",
-            "ui_label": "#DAA520",
+            "ui_accent": "#2bb397",
+            "ui_label": "#4fc9b0",
             "ui_ok": "#4caf50",
             "ui_error": "#ef5350",
             "ui_warn": "#ffa726",
             "prompt": "#FFF8DC",
-            "input_rule": "#CD7F32",
-            "response_border": "#FFD700",
+            "input_rule": "#1e8a76",
+            "response_border": "#37d0b0",
             "status_bar_bg": "#1a1a2e",
             "status_bar_text": "#C0C0C0",
-            "status_bar_strong": "#FFD700",
+            "status_bar_strong": "#37d0b0",
             "status_bar_dim": "#8A7A4A",
             "status_bar_good": "#8FBC8F",
-            "status_bar_warn": "#FFD700",
+            "status_bar_warn": "#37d0b0",
             "status_bar_bad": "#FF8C00",
             "status_bar_critical": "#FF6B6B",
-            "session_label": "#DAA520",
+            "session_label": "#4fc9b0",
             "session_border": "#8B8682",
             "completion_menu_bg": "#1a1a2e",
             "completion_menu_current_bg": "#333355",
@@ -236,16 +236,16 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
         },
         # Light overlay (merged onto `colors`; dark mode renders the vivid
         # block above untouched). The goldenrod ladder: on white, the vivid
-        # #FFD700/#FFBF00 read as glare and WCAG-darkened mustard (#867000)
+        # #37d0b0/#2bb397 read as glare and WCAG-darkened mustard (#867000)
         # reads as mud — the sweet spot is the statusbar's goldenrod family
-        # (#B8860B/#DAA520): hue kept, saturation tamed, mid luminance.
+        # (#16695b/#4fc9b0): hue kept, saturation tamed, mid luminance.
         # Hierarchy on white: ink body 8.9:1 > fade 5.2 > label 3.7 >
         # muted 3.3 > title 2.7 > headers 2.4 (accents recede last, like
         # slate's pastels — the raw-canon look, just not neon).
         "light_colors": {
             "banner_title": "#C8961E",
             "banner_accent": "#D89B04",
-            "banner_dim": "#B8860B",
+            "banner_dim": "#16695b",
             "banner_text": "#5C4718",
             "ui_accent": "#D89B04",
             "ui_label": "#A97E10",
@@ -276,8 +276,8 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
         "branding": {
             "agent_name": "Galahad Agent",
             "welcome": "Welcome to Galahad Agent! Type your message or /help for commands.",
-            "goodbye": "Goodbye! ⚕",
-            "response_label": " ⚕ Galahad ",
+            "goodbye": "Goodbye! ⚔",
+            "response_label": " ⚔ Galahad ",
             "prompt_symbol": "❯",
             "help_header": "(^_^)? Available Commands",
         },
@@ -397,8 +397,8 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
         "branding": {
             "agent_name": "Galahad Agent",
             "welcome": "Welcome to Galahad Agent! Type your message or /help for commands.",
-            "goodbye": "Goodbye! ⚕",
-            "response_label": " ⚕ Galahad ",
+            "goodbye": "Goodbye! ⚔",
+            "response_label": " ⚔ Galahad ",
             "prompt_symbol": "❯",
             "help_header": "[?] Available Commands",
         },
@@ -441,8 +441,8 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
         "branding": {
             "agent_name": "Galahad Agent",
             "welcome": "Welcome to Galahad Agent! Type your message or /help for commands.",
-            "goodbye": "Goodbye! ⚕",
-            "response_label": " ⚕ Galahad ",
+            "goodbye": "Goodbye! ⚔",
+            "response_label": " ⚔ Galahad ",
             "prompt_symbol": "❯",
             "help_header": "(^_^)? Available Commands",
         },
@@ -487,8 +487,8 @@ _BUILTIN_SKINS: Dict[str, Dict[str, Any]] = {
         "branding": {
             "agent_name": "Galahad Agent",
             "welcome": "Welcome to Galahad Agent! Type your message or /help for commands.",
-            "goodbye": "Goodbye! ⚕",
-            "response_label": " ⚕ Galahad ",
+            "goodbye": "Goodbye! ⚔",
+            "response_label": " ⚔ Galahad ",
             "prompt_symbol": "❯",
             "help_header": "[?] Available Commands",
         },
@@ -976,7 +976,7 @@ def get_active_help_header(fallback: str = "(^_^)? Available Commands") -> str:
 
 
 
-def get_active_goodbye(fallback: str = "Goodbye! ⚕") -> str:
+def get_active_goodbye(fallback: str = "Goodbye! ⚔") -> str:
     """Get the goodbye line from the active skin."""
     try:
         return get_active_skin().get_branding("goodbye", fallback)
@@ -1001,8 +1001,8 @@ def get_prompt_toolkit_style_overrides() -> Dict[str, str]:
     # color schemes).  Skins can opt into a colored prompt by setting
     # `prompt` explicitly in their YAML.
     prompt = skin.get_color("prompt", "")
-    input_rule = skin.get_color("input_rule", "#CD7F32")
-    title = skin.get_color("banner_title", "#FFD700")
+    input_rule = skin.get_color("input_rule", "#1e8a76")
+    title = skin.get_color("banner_title", "#37d0b0")
     text = skin.get_color("banner_text", "#FFF8DC")
     dim = skin.get_color("banner_dim", "#555555")
     label = skin.get_color("ui_label", title)
