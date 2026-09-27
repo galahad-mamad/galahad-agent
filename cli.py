@@ -4203,7 +4203,7 @@ class _VoiceInputMessage:
         return self.text
 
 
-class GalahadCLI(CLIAgentSetupMixin, CLICommandsMixin, CLIBillingMixin):
+class GalahadCLI(CLIAgentSetupMixin, CLICommandsMixin, CLIBillingMixin, CLIExtrasMixin):
     """
     Interactive CLI for the Galahad Agent.
     
@@ -10160,6 +10160,12 @@ class GalahadCLI(CLIAgentSetupMixin, CLICommandsMixin, CLIBillingMixin):
             self._show_billing(cmd_original)
         elif canonical == "insights":
             self._show_insights(cmd_original)
+        elif canonical == "recap":
+            self._handle_recap_command()
+        elif canonical == "pocket":
+            self._handle_pocket_command(cmd_original)
+        elif canonical == "later":
+            self._handle_later_command(cmd_original)
         elif canonical == "copy":
             self._handle_copy_command(cmd_original)
         elif canonical == "debug":

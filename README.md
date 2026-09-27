@@ -35,6 +35,35 @@ galahad           # start chatting
 
 Persian quick-start: **[README-fa.md](README-fa.md)** · راهنمای اتصال ربات تلگرام: [`gateway-plugins/connect.sh`](gateway-plugins/connect.sh)
 
+### Android / Termux 📱
+
+Full Persian guide: **[docs/termux-fa.md](docs/termux-fa.md)** · English: **[website/docs/getting-started/termux.md](website/docs/getting-started/termux.md)**
+
+```bash
+pkg update -y && pkg install -y git python clang rust make pkg-config libffi openssl nodejs ripgrep ffmpeg
+git clone https://github.com/galahad-mamad/galahad-agent.git
+cd galahad-agent
+python -m venv venv && source venv/bin/activate
+export ANDROID_API_LEVEL="$(getprop ro.build.version.sdk)"
+python -m pip install -e '.[termux]' -c constraints-termux.txt
+ln -sf "$PWD/venv/bin/galahad" "$PREFIX/bin/galahad"
+galahad
+```
+
+One-liner installer (Termux-aware, falls back extras automatically):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
+```
+
+## Flagship slash commands
+
+| Command | What it does |
+|---|---|
+| `/recap` | Instant local summary of the session — turns, tools used, files touched. No LLM call, works offline. |
+| `/pocket` | Persistent snippet bank that survives sessions: `/pocket save wifi-hotel "pass: …" #travel`, `/pocket search wifi`, `/pocket get wifi-hotel` (auto-copies to clipboard, Termux-aware). |
+| `/later` | Natural reminders: `/later 30m stretch break`, `/later every 2h check the build` → one-shot background job. |
+
 ## First commands
 
 | Command | What it does |
