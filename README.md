@@ -4,22 +4,13 @@
 
 # Galahad Agent ☤
 <p align="center">
-  <a href="https://galahad-mamad.github.io/">Galahad Agent</a> | <a href="https://galahad-mamad.github.io/">Galahad Desktop</a>
-</p>
-<p align="center">
-  <a href="https://galahad-mamad.github.io/docs/"><img src="https://img.shields.io/badge/Docs-galahad--agent.galahad.dev-FFD700?style=for-the-badge" alt="Documentation"></a>
-  <a href="https://discord.gg/galahad-mamad"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
+  <a href="https://instagram.com/galahad_mamad"><img src="https://img.shields.io/badge/Instagram-@galahad__mamad-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
   <a href="https://github.com/galahad-mamad/galahad-agent/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT"></a>
-  <a href="https://galahad.dev"><img src="https://img.shields.io/badge/Built%20by-Galahad%20Research-blueviolet?style=for-the-badge" alt="Built by Galahad"></a>
-  <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/Lang-中文-red?style=for-the-badge" alt="中文"></a>
-  <a href="README.ur-pk.md"><img src="https://img.shields.io/badge/Lang-اردو-green?style=for-the-badge" alt="اردو"></a>
-  <a href="README.es.md"><img src="https://img.shields.io/badge/Lang-Español-orange?style=for-the-badge" alt="Español"></a>
-  <a href="README-fa.md"><img src="https://img.shields.io/badge/Lang-فارسی-informational?style=for-the-badge" alt="فارسی"></a>
 </p>
 
-**The self-improving AI agent built by [Galahad](https://galahad.dev).** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing when idle. It's not tied to your laptop — talk to it from Telegram while it works on a cloud VM.
+**The self-improving AI agent built by [galahad_mamad](https://instagram.com/galahad_mamad).** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing when idle. It's not tied to your laptop — talk to it from Telegram while it works on a cloud VM.
 
-Use any model you want — [Galahad Portal](https://portal.galahad.dev), OpenRouter, OpenAI, your own endpoint, and [many others](https://galahad-mamad.github.io/docs/integrations/providers). Switch with `galahad model` — no code changes, no lock-in.
+Use any model you want — a hosted portal (coming soon), OpenRouter, OpenAI, your own endpoint, and [many others](https://github.com/galahad-mamad/galahad-agent#readme). Switch with `galahad model` — no code changes, no lock-in.
 
 <table>
 <tr><td><b>A real terminal interface</b></td><td>Full TUI with multiline editing, slash-command autocomplete, conversation history, interrupt-and-redirect, and streaming tool output.</td></tr>
@@ -38,7 +29,7 @@ Use any model you want — [Galahad Portal](https://portal.galahad.dev), OpenRou
 ### Linux, macOS, WSL2, Termux
 
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+git clone https://github.com/galahad-mamad/galahad-agent.git && cd galahad-agent && python3 -m venv .venv && source .venv/bin/activate && pip install -e .
 ```
 
 ### Windows (native, PowerShell)
@@ -48,14 +39,14 @@ curl -fsSL https://galahad-mamad.github.io/install.sh | bash
 Run this in PowerShell:
 
 ```powershell
-iex (irm https://galahad-mamad.github.io/install.ps1)
+git clone https://github.com/galahad-mamad/galahad-agent.git; cd galahad-agent; py -3.12 -m venv .venv; .\.venv\Scripts\Activate.ps1; pip install -e .
 ```
 
 The installer handles everything: uv, Python 3.11, Node.js, ripgrep, ffmpeg, **and a portable Git Bash** (MinGit, unpacked to `%LOCALAPPDATA%\galahad\git` — no admin required, completely isolated from any system Git install). Galahad uses this bundled Git Bash to run shell commands.
 
 If you already have Git installed, the installer detects it and uses that instead. Otherwise a ~45MB MinGit download is all you need — it won't touch or interfere with any system Git.
 
-> **Android / Termux:** The tested manual path is documented in the [Termux guide](https://galahad-mamad.github.io/docs/getting-started/termux). On Termux, Galahad installs a curated `.[termux]` extra because the full `.[all]` extra currently pulls Android-incompatible voice dependencies.
+> **Android / Termux:** The tested manual path is documented in the [Termux guide](https://github.com/galahad-mamad/galahad-agent/README-fa.md). On Termux, Galahad installs a curated `.[termux]` extra because the full `.[all]` extra currently pulls Android-incompatible voice dependencies.
 >
 > **Windows:** Native Windows is fully supported — the PowerShell one-liner above installs everything. If you'd rather use WSL2, the Linux command works there too. Native Windows install lives under `%LOCALAPPDATA%\galahad`; WSL2 installs under `~/.galahad` as on Linux.
 
@@ -118,13 +109,13 @@ galahad update       # Update to the latest version
 galahad doctor       # Diagnose any issues
 ```
 
-📖 **[Full documentation →](https://galahad-mamad.github.io/docs/)**
+📖 **[Full documentation →](https://github.com/galahad-mamad/galahad-agent/README-fa.md)**
 
 ---
 
 ## Skip the API-key collection — Galahad Portal
 
-Galahad works with whatever provider you want — that's not changing. But if you'd rather not collect five separate API keys for the model, web search, image generation, TTS, and a cloud browser, **[Galahad Portal](https://portal.galahad.dev)** covers all of them under one subscription:
+Galahad works with whatever provider you want — that's not changing. But if you'd rather not collect five separate API keys for the model, web search, image generation, TTS, and a cloud browser, **a hosted portal (coming soon)** covers all of them under one subscription:
 
 - **300+ models** — pick any of them with `/model <name>`
 - **Tool Gateway** — web search (Firecrawl), image generation (FAL), text-to-speech (OpenAI), cloud browser (Browser Use), all routed through your sub. No extra accounts.
@@ -135,7 +126,7 @@ One command from a fresh install:
 galahad setup --portal
 ```
 
-That logs you in via OAuth, sets Galahad as your provider, and turns on the Tool Gateway. Check what's wired up any time with `galahad portal info`. Full details on the [Tool Gateway docs page](https://galahad-mamad.github.io/docs/user-guide/features/tool-gateway).
+That logs you in via OAuth, sets Galahad as your provider, and turns on the Tool Gateway. Check what's wired up any time with `galahad portal info`. Full details on the [Tool Gateway docs page](https://github.com/galahad-mamad/galahad-agent#readme).
 
 You can still bring your own keys per-tool whenever you want — the gateway is per-backend, not all-or-nothing.
 
@@ -157,31 +148,31 @@ Galahad has two entry points: start the terminal UI with `galahad`, or run the g
 | Interrupt current work         | `Ctrl+C` or send a new message                | `/stop` or send a new message                                                    |
 | Platform-specific status       | `/platforms`                                  | `/status`, `/sethome`                                                            |
 
-For the full command lists, see the [CLI guide](https://galahad-mamad.github.io/docs/user-guide/cli) and the [Messaging Gateway guide](https://galahad-mamad.github.io/docs/user-guide/messaging).
+For the full command lists, see the [CLI guide](https://github.com/galahad-mamad/galahad-agent#readme) and the [Messaging Gateway guide](https://github.com/galahad-mamad/galahad-agent#readme).
 
 ---
 
 ## Documentation
 
-All documentation lives at **[galahad-mamad.github.io/docs](https://galahad-mamad.github.io/docs/)**:
+All documentation lives in this repo — see **[README-fa.md](README-fa.md)**:
 
 | Section                                                                                             | What's Covered                                             |
 | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [Quickstart](https://galahad-mamad.github.io/docs/getting-started/quickstart)                 | Install → setup → first conversation in 2 minutes          |
-| [CLI Usage](https://galahad-mamad.github.io/docs/user-guide/cli)                              | Commands, keybindings, personalities, sessions             |
-| [Configuration](https://galahad-mamad.github.io/docs/user-guide/configuration)                | Config file, providers, models, all options                |
-| [Messaging Gateway](https://galahad-mamad.github.io/docs/user-guide/messaging)                | Telegram, Discord, Slack, WhatsApp, Signal, Home Assistant |
-| [Security](https://galahad-mamad.github.io/docs/user-guide/security)                          | Command approval, DM pairing, container isolation          |
-| [Tools & Toolsets](https://galahad-mamad.github.io/docs/user-guide/features/tools)            | 40+ tools, toolset system, terminal backends               |
-| [Skills System](https://galahad-mamad.github.io/docs/user-guide/features/skills)              | Procedural memory, Skills Hub, creating skills             |
-| [Memory](https://galahad-mamad.github.io/docs/user-guide/features/memory)                     | Persistent memory, user profiles, best practices           |
-| [MCP Integration](https://galahad-mamad.github.io/docs/user-guide/features/mcp)               | Connect any MCP server for extended capabilities           |
-| [Cron Scheduling](https://galahad-mamad.github.io/docs/user-guide/features/cron)              | Scheduled tasks with platform delivery                     |
-| [Context Files](https://galahad-mamad.github.io/docs/user-guide/features/context-files)       | Project context that shapes every conversation             |
-| [Architecture](https://galahad-mamad.github.io/docs/developer-guide/architecture)             | Project structure, agent loop, key classes                 |
-| [Contributing](https://galahad-mamad.github.io/docs/developer-guide/contributing)             | Development setup, PR process, code style                  |
-| [CLI Reference](https://galahad-mamad.github.io/docs/reference/cli-commands)                  | All commands and flags                                     |
-| [Environment Variables](https://galahad-mamad.github.io/docs/reference/environment-variables) | Complete env var reference                                 |
+| [Quickstart](https://github.com/galahad-mamad/galahad-agent#readmegetting-started/quickstart)                 | Install → setup → first conversation in 2 minutes          |
+| [CLI Usage](https://github.com/galahad-mamad/galahad-agent#readme)                              | Commands, keybindings, personalities, sessions             |
+| [Configuration](https://github.com/galahad-mamad/galahad-agent#readmeuser-guide/configuration)                | Config file, providers, models, all options                |
+| [Messaging Gateway](https://github.com/galahad-mamad/galahad-agent#readme)                | Telegram, Discord, Slack, WhatsApp, Signal, Home Assistant |
+| [Security](https://github.com/galahad-mamad/galahad-agent#readmeuser-guide/security)                          | Command approval, DM pairing, container isolation          |
+| [Tools & Toolsets](https://github.com/galahad-mamad/galahad-agent#readmeuser-guide/features/tools)            | 40+ tools, toolset system, terminal backends               |
+| [Skills System](https://github.com/galahad-mamad/galahad-agent#readmeuser-guide/features/skills)              | Procedural memory, Skills Hub, creating skills             |
+| [Memory](https://github.com/galahad-mamad/galahad-agent#readmeuser-guide/features/memory)                     | Persistent memory, user profiles, best practices           |
+| [MCP Integration](https://github.com/galahad-mamad/galahad-agent#readmeuser-guide/features/mcp)               | Connect any MCP server for extended capabilities           |
+| [Cron Scheduling](https://github.com/galahad-mamad/galahad-agent#readmeuser-guide/features/cron)              | Scheduled tasks with platform delivery                     |
+| [Context Files](https://github.com/galahad-mamad/galahad-agent#readmeuser-guide/features/context-files)       | Project context that shapes every conversation             |
+| [Architecture](https://github.com/galahad-mamad/galahad-agent#readmedeveloper-guide/architecture)             | Project structure, agent loop, key classes                 |
+| [Contributing](https://github.com/galahad-mamad/galahad-agent#readmedeveloper-guide/contributing)             | Development setup, PR process, code style                  |
+| [CLI Reference](https://github.com/galahad-mamad/galahad-agent#readmereference/cli-commands)                  | All commands and flags                                     |
+| [Environment Variables](https://github.com/galahad-mamad/galahad-agent#readmereference/environment-variables) | Complete env var reference                                 |
 
 ---
 
@@ -217,7 +208,7 @@ See `galahad claw migrate --help` for all options, or use the `openclaw-migratio
 
 ## Contributing
 
-We welcome contributions! See the [Contributing Guide](https://galahad-mamad.github.io/docs/developer-guide/contributing) for development setup, code style, and PR process.
+We welcome contributions! See the [Contributing Guide](https://github.com/galahad-mamad/galahad-agent#readmedeveloper-guide/contributing) for development setup, code style, and PR process.
 
 Quick start for contributors — use the standard installer, then work from the
 full git checkout it creates at `$GALAHAD_HOME/galahad-agent` (usually
@@ -225,7 +216,7 @@ full git checkout it creates at `$GALAHAD_HOME/galahad-agent` (usually
 managed venv, lazy dependencies, gateway, and docs tooling.
 
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+git clone https://github.com/galahad-mamad/galahad-agent.git && cd galahad-agent && python3 -m venv .venv && source .venv/bin/activate && pip install -e .
 cd "${GALAHAD_HOME:-$HOME/.galahad}/galahad-agent"
 uv pip install -e ".[all,dev]"
 scripts/run_tests.sh
@@ -262,4 +253,4 @@ scripts/run_tests.sh
 
 MIT — see [LICENSE](LICENSE).
 
-Built by [Galahad](https://galahad.dev).
+Built by [galahad_mamad](https://instagram.com/galahad_mamad).
