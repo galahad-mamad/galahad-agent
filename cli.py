@@ -54,6 +54,7 @@ from galahad_cli.fallback_config import get_fallback_chain
 from galahad_cli.cli_agent_setup_mixin import CLIAgentSetupMixin
 from galahad_cli.cli_commands_mixin import CLICommandsMixin
 from galahad_cli.cli_billing_mixin import CLIBillingMixin
+from galahad_cli.cli_extras_mixin import CLIExtrasMixin
 from agent.interrupt_compat import request_hard_interrupt
 
 # prompt_toolkit for fixed input area TUI
