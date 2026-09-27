@@ -252,7 +252,7 @@ class LongPreviewAgent:
 
 
 class UrlPreviewAgent:
-    URL = "https://galahad-mamad.github.io/docs/gateway/discord/tool-progress"
+    URL = "https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/gateway/discord/tool-progress"
 
     def __init__(self, **kwargs):
         self.tool_progress_callback = kwargs.get("tool_progress_callback")

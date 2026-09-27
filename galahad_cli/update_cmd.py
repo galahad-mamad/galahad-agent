@@ -367,7 +367,7 @@ def _print_curator_first_run_notice() -> None:
     print("  Preview now:  galahad curator run --dry-run")
     print("  Pause it:     galahad curator pause")
     print(
-        "  Docs:         https://galahad-mamad.github.io/docs/user-guide/features/curator"
+        "  Docs:         https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/user-guide/features/curator"
     )
 
 def _print_fts_optimize_available_notice() -> None:
@@ -3678,7 +3678,7 @@ def _cmd_update_impl(args, gateway_mode: bool):
         else:
             print("✗ Not a git repository. Please reinstall:")
             print(
-                "  curl -fsSL https://galahad-mamad.github.io/install.sh | bash"
+                "  curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash"
             )
             sys.exit(1)
 

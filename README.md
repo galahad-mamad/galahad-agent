@@ -28,7 +28,6 @@ pip install -e .
 ```
 
 Requires Python 3.11+. Then:
-
 ```bash
 galahad setup     # first-run wizard: provider, tools, messaging
 galahad           # start chatting

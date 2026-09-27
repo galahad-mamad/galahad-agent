@@ -2,7 +2,7 @@
 
 Set via `galahad model` (picker) or `galahad setup`. 35+ provider profiles ship as
 plugins under `plugins/model-providers/`; user plugins of the same name override.
-Full docs: https://galahad-mamad.github.io/docs/integrations/providers
+Full docs: https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/integrations/providers
 
 ### Providers
 

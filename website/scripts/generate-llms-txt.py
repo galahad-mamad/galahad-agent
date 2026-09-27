@@ -9,8 +9,8 @@ Outputs:
                                     comments separating files.
 
 Both publish at:
-  https://galahad-mamad.github.io/docs/llms.txt
-  https://galahad-mamad.github.io/docs/llms-full.txt
+  https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/llms.txt
+  https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/llms-full.txt
 
 The `/docs/` prefix is not a mistake — Docusaurus serves `website/static/`
 at the `docs/` base path. Clients and IDE plugins that probe the classic
@@ -249,7 +249,7 @@ def emit_llms_full() -> str:
             "Developer Guide, Reference, then everything else.\n"
         ),
         "Canonical site: https://galahad-mamad.github.io/docs\n",
-        "Short index: https://galahad-mamad.github.io/docs/llms.txt\n",
+        "Short index: https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/llms.txt\n",
         "\n---\n\n",
     ]
 

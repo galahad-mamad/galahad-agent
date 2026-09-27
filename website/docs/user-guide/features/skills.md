@@ -24,7 +24,7 @@ By default every profile is seeded with the bundled skill catalog, and each `gal
 **At install time** (applies to the default `~/.galahad` profile):
 
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash -s -- --no-skills
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash -s -- --no-skills
 ```
 
 **At profile-create time** (named profiles):

@@ -93,7 +93,7 @@ The reason is maintenance load, not quality. Every external product absorbed int
 
 Publish these as a **standalone plugin repo** instead:
 
-- Implement the relevant ABC and use the existing plugin discovery path (`~/.galahad/plugins/`, project `.galahad/plugins/`, or a pip entry point) — see [Build a Galahad Plugin](https://galahad-mamad.github.io/docs/guides/build-a-galahad-plugin)
+- Implement the relevant ABC and use the existing plugin discovery path (`~/.galahad/plugins/`, project `.galahad/plugins/`, or a pip entry point) — see [Build a Galahad Plugin](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/guides/build-a-galahad-plugin)
 - Register lifecycle hooks (`pre_tool_call`, `post_tool_call`, `pre_llm_call`, `post_llm_call`, `on_session_start`, `on_session_end`), tools (`ctx.register_tool`), and CLI subcommands (`ctx.register_cli_command`) through the surface we already expose — no core changes needed
 - If your plugin needs a capability the framework doesn't expose, that's a feature request to **widen the generic plugin surface** (a new hook or `ctx` method) — never special-case your plugin in core
 - Promote it in the [Galahad Discord](https://discord.gg/galahad-mamad) `#plugins-skills-and-skins` channel so users can find and install it
@@ -124,7 +124,7 @@ development environment on the same layout the CLI, updater, lazy dependency
 installer, gateway, and docs assume.
 
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
 cd "${GALAHAD_HOME:-$HOME/.galahad}/galahad-agent"
 
 # Add dev/test extras on top of the standard install.
@@ -275,7 +275,7 @@ galahad-agent/
 ├── skills/                   # Bundled skills (copied to ~/.galahad/skills/ on install)
 ├── optional-skills/          # Official optional skills (discoverable via hub, not activated by default)
 ├── tests/                    # Test suite
-├── website/                  # Documentation site (galahad-mamad.github.io)
+├── website/                  # Documentation site (website/ directory in this repo)
 │
 ├── cli-config.yaml.example   # Example configuration (copied to ~/.galahad/config.yaml)
 └── AGENTS.md                 # Development guide for AI coding assistants

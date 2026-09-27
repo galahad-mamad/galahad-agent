@@ -43,7 +43,7 @@ description: "如何为 Galahad Agent 做贡献 — 开发环境配置、代码�
 对大多数贡献者来说，最好的开发启动方式和用户安装方式相同：运行标准安装器，然后在它克隆出的仓库里开发。安装器会创建 Galahad venv、配置 `galahad` 命令、为 `galahad update` 写入安装方式标记，并把完整 git 项目克隆到 `$GALAHAD_HOME/galahad-agent`（通常是 `~/.galahad/galahad-agent`）。这样你的开发环境会和 CLI、updater、lazy dependency installer、gateway、docs 默认假设的布局一致。
 
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
 cd "${GALAHAD_HOME:-$HOME/.galahad}/galahad-agent"
 
 # 在标准安装基础上添加开发/测试 extras。

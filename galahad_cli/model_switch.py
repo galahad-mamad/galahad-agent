@@ -2106,7 +2106,7 @@ def list_authenticated_providers(
     curated: dict[str, list[str]] = dict(_PROVIDER_MODELS)
     curated["openrouter"] = [mid for mid, _ in OPENROUTER_MODELS]
     # "galahad" pulls from the remote model-catalog manifest published at
-    # https://galahad-mamad.github.io/docs/api/model-catalog.json so
+    # https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/api/model-catalog.json so
     # newly added Portal models surface in the /model picker without
     # requiring a Galahad release. Falls back to the in-repo
     # _PROVIDER_MODELS["galahad"] snapshot when the manifest is unreachable.

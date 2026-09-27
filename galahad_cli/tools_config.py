@@ -4885,7 +4885,7 @@ def tools_command(args=None, first_install: bool = False, config: dict = None):
     print(color("⚔ Galahad Tool Configuration", Colors.CYAN, Colors.BOLD))
     print(color("  Enable or disable tools per platform.", Colors.DIM))
     print(color("  Tools that need API keys will be configured when enabled.", Colors.DIM))
-    print(color("  Guide: https://galahad-mamad.github.io/docs/user-guide/features/tools", Colors.DIM))
+    print(color("  Guide: https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/user-guide/features/tools", Colors.DIM))
     print()
 
     # ── First-time install: linear flow, no platform menu ──

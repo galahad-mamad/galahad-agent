@@ -22,14 +22,14 @@ For a command-line only install without Galahad Desktop, run:
 
 #### Linux / macOS / WSL2 / Android (Termux)
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
 ```
 
 #### Windows (native)
 
 Run in powershell:
 ```powershell
-iex (irm https://galahad-mamad.github.io/install.ps1) 
+iex (irm https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.ps1) 
 ```
 
 If you want to install & run Galahad Desktop after a command-line only install, simply run
@@ -124,12 +124,12 @@ Running Galahad as a dedicated unprivileged user (e.g. a `galahad` systemd servi
 
 2. **As the unprivileged service user**, run the regular installer. It will detect the missing sudo, skip `--with-deps`, and install Chromium into the user's local Playwright cache:
    ```bash
-   curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+   curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
    ```
 
    If you want to skip the Playwright step entirely — for example because you're running headless and don't need browser automation — pass `--skip-browser`:
    ```bash
-   curl -fsSL https://galahad-mamad.github.io/install.sh | bash -s -- --skip-browser
+   curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash -s -- --skip-browser
    ```
 
 3. **Make `galahad` available to the service user's shells.** The installer writes the launcher to `~/.local/bin/galahad`. System service accounts often have a minimal PATH that doesn't include `~/.local/bin`. Either add it to the user's environment, or symlink the launcher into a system location:

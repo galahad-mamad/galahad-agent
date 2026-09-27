@@ -194,7 +194,7 @@ galahad-agent/
 ├── skills/                   # Habilidades incluidas (copiadas a ~/.galahad/skills/ en la instalación)
 ├── optional-skills/          # Habilidades opcionales oficiales (descubribles vía hub, no activadas por defecto)
 ├── tests/                    # Suite de tests
-├── website/                  # Sitio de documentación (galahad-mamad.github.io)
+├── website/                  # Sitio de documentación (website/ directory in this repo)
 │
 ├── cli-config.yaml.example   # Configuración de ejemplo (copiada a ~/.galahad/config.yaml)
 └── AGENTS.md                 # Guía de desarrollo para asistentes de codificación IA

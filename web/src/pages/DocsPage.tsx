@@ -5,7 +5,7 @@ import { usePageHeader } from "@/contexts/usePageHeader";
 import { cn } from "@/lib/utils";
 import { PluginSlot } from "@/plugins";
 
-export const GALAHAD_DOCS_URL = "https://galahad-mamad.github.io/docs/";
+export const GALAHAD_DOCS_URL = "https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/";
 
 const DS_BUTTON_OUTLINED_LINK_CN = cn(
   "group relative inline-grid grid-cols-[auto_1fr_auto] items-center",

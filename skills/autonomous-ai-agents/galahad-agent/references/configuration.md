@@ -1,7 +1,7 @@
 # Configuration, Toolsets & Voice
 
 Edit with `galahad config edit` or `galahad config set section.key value`.
-Full reference: https://galahad-mamad.github.io/docs/user-guide/configuration
+Full reference: https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/user-guide/configuration
 
 ### Config Sections (most-used keys)
 

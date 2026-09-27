@@ -100,7 +100,7 @@ The `metadata` mount option above is important — without it, files on `/mnt/c/
 Once you have a WSL2 shell open:
 
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
 source ~/.bashrc
 galahad
 ```

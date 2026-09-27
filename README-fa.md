@@ -12,6 +12,23 @@ pip install -e .
 galahad setup
 ```
 
+### نصب روی اندروید (Termux) 📱
+
+راهنمای کامل و گام‌به‌گام فارسی: **[docs/termux-fa.md](docs/termux-fa.md)**
+
+خلاصه:
+
+```bash
+pkg update -y && pkg install -y git python clang rust make pkg-config libffi openssl nodejs ripgrep ffmpeg
+git clone https://github.com/galahad-mamad/galahad-agent.git
+cd galahad-agent
+python -m venv venv && source venv/bin/activate
+export ANDROID_API_LEVEL="$(getprop ro.build.version.sdk)"
+python -m pip install -e '.[termux]' -c constraints-termux.txt
+ln -sf "$PWD/venv/bin/galahad" "$PREFIX/bin/galahad"
+galahad
+```
+
 ویزارد وب فارسی (تنظیم مدل، تلگرام، واتساپ، دیسکورد):
 
 ```bash

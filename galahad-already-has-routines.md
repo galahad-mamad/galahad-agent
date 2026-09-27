@@ -127,7 +127,7 @@ A nightly backlog triage on Sonnet costs roughly $0.02-0.05. A monitoring check 
 Galahad Agent is open source and free. The automation infrastructure — cron scheduler, webhook platform, skill system, multi-platform delivery — is built in.
 
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
 galahad setup
 ```
 
@@ -149,7 +149,7 @@ galahad webhook subscribe pr-review \
   --deliver github_comment
 ```
 
-Full automation blueprints gallery: [galahad-mamad.github.io/docs/reference/automation-blueprints-catalog](https://galahad-mamad.github.io/docs/reference/automation-blueprints-catalog)
+Full automation blueprints gallery: [galahad-mamad.github.io/docs/reference/automation-blueprints-catalog](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/reference/automation-blueprints-catalog)
 
 Documentation: [galahad-mamad.github.io](https://galahad-mamad.github.io)
 

@@ -137,7 +137,7 @@ class TestFallbackChain:
     releases (opus 4.8, etc.) never reach the picker.
     """
 
-    PRIMARY = "https://galahad-mamad.github.io/docs/api/model-catalog.json"
+    PRIMARY = "https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/api/model-catalog.json"
     FALLBACK = (
         "https://raw.githubusercontent.com/galahad-mamad/galahad-agent"
         "/main/website/static/api/model-catalog.json"

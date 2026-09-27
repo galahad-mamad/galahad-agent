@@ -3978,7 +3978,7 @@ def check_for_skill_updates(
 # Galahad centralized index source
 # ---------------------------------------------------------------------------
 
-GALAHAD_INDEX_URL = "https://galahad-mamad.github.io/docs/api/skills-index.json"
+GALAHAD_INDEX_URL = "https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/api/skills-index.json"
 GALAHAD_INDEX_TTL = 6 * 3600  # 6 hours
 
 

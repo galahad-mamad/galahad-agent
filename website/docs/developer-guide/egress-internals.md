@@ -311,8 +311,8 @@ The CLI uses argparse, so `--help` is a good first probe for "did my new flag re
 
 ## See also
 
-- User-facing setup + troubleshooting: [Egress proxy](https://galahad-mamad.github.io/docs/user-guide/egress/iron-proxy)
-- Docker backend internals: [Docker](https://galahad-mamad.github.io/docs/user-guide/docker)
-- Bitwarden Secrets Manager integration: [`galahad secrets bitwarden`](https://galahad-mamad.github.io/docs/user-guide/secrets/bitwarden)
-- CLI command reference: [`galahad egress`](https://galahad-mamad.github.io/docs/reference/cli-commands#galahad-egress)
-- Sandbox-injected environment variables: [Egress proxy (sandbox-injected)](https://galahad-mamad.github.io/docs/reference/environment-variables#egress-proxy-sandbox-injected)
+- User-facing setup + troubleshooting: [Egress proxy](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/user-guide/egress/iron-proxy)
+- Docker backend internals: [Docker](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/user-guide/docker)
+- Bitwarden Secrets Manager integration: [`galahad secrets bitwarden`](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/user-guide/secrets/bitwarden)
+- CLI command reference: [`galahad egress`](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/reference/cli-commands#galahad-egress)
+- Sandbox-injected environment variables: [Egress proxy (sandbox-injected)](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/reference/environment-variables#egress-proxy-sandbox-injected)

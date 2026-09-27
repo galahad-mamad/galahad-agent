@@ -51,7 +51,7 @@ That does not stop Galahad from working well as a phone-native CLI agent — it 
 Galahad now ships a Termux-aware installer path:
 
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
 ```
 
 On Termux, the installer automatically:

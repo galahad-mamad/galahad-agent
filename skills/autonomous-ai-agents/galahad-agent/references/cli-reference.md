@@ -1,7 +1,7 @@
 # Galahad CLI Reference
 
 Live sources when anything looks stale: `galahad --help`, `galahad <command> --help`,
-https://galahad-mamad.github.io/docs/reference/cli-commands
+https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/reference/cli-commands
 
 ### Global Flags
 
@@ -79,7 +79,7 @@ galahad gateway run|install|start|stop|restart|status|setup
 ```
 
 20+ platforms: Telegram, Discord, Slack, WhatsApp (Baileys + Business Cloud API), iMessage (Photon — `galahad photon setup`), Signal, Email, SMS, Matrix, Mattermost, Teams, LINE, SimpleX, ntfy, Google Chat, Home Assistant, DingTalk, Feishu, WeCom, Weixin, API Server, Webhooks. Open WebUI connects via the API Server adapter. Most adapters ship under `plugins/platforms/`.
-Docs: https://galahad-mamad.github.io/docs/user-guide/messaging/
+Docs: https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/user-guide/messaging/
 
 ### Sessions
 
@@ -141,10 +141,10 @@ Plugin- and provider-supplied subcommands (e.g. `galahad photon setup`) only app
 
 | Looking for... | Location |
 |---|---|
-| Config options | `galahad config edit` · [Configuration docs](https://galahad-mamad.github.io/docs/user-guide/configuration) |
-| Tools / toolsets | `galahad tools list` · [Tools reference](https://galahad-mamad.github.io/docs/reference/tools-reference) |
-| Skills catalog | `galahad skills browse` · [Skills catalog](https://galahad-mamad.github.io/docs/reference/skills-catalog) |
-| Provider setup | `galahad model` · [Providers guide](https://galahad-mamad.github.io/docs/integrations/providers) |
-| Env variables | `galahad config env-path` · [Env vars reference](https://galahad-mamad.github.io/docs/reference/environment-variables) |
+| Config options | `galahad config edit` · [Configuration docs](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/user-guide/configuration) |
+| Tools / toolsets | `galahad tools list` · [Tools reference](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/reference/tools-reference) |
+| Skills catalog | `galahad skills browse` · [Skills catalog](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/reference/skills-catalog) |
+| Provider setup | `galahad model` · [Providers guide](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/integrations/providers) |
+| Env variables | `galahad config env-path` · [Env vars reference](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/reference/environment-variables) |
 | Gateway logs | `~/.galahad/logs/gateway.log` (or `galahad logs`) |
 | Sessions | `galahad sessions browse` (reads state.db) |

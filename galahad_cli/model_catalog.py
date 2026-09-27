@@ -63,7 +63,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 DEFAULT_CATALOG_URL = (
-    "https://galahad-mamad.github.io/docs/api/model-catalog.json"
+    "https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/api/model-catalog.json"
 )
 # Fallback fetch chain. The Docusaurus site is served through Vercel, which
 # occasionally returns HTTP 403 + x-vercel-mitigated: challenge for non-

@@ -2453,7 +2453,7 @@ DEFAULT_CONFIG = {
     # The default URL is served by the docs site GitHub Pages deploy.
     "model_catalog": {
         "enabled": True,
-        "url": "https://galahad-mamad.github.io/docs/api/model-catalog.json",
+        "url": "https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/api/model-catalog.json",
         # Disk cache TTL in hours.  Beyond this, the CLI refetches on the
         # next /model or `galahad model` invocation; network failures
         # silently fall back to the stale cache.

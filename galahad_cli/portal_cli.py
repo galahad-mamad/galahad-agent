@@ -28,7 +28,7 @@ from galahad_cli.config import load_config
 
 DEFAULT_PORTAL_URL = "https://portal.galahad.dev"
 SUBSCRIPTION_URL = "https://portal.galahad.dev/manage-subscription"
-DOCS_URL = "https://galahad-mamad.github.io/docs/user-guide/features/tool-gateway"
+DOCS_URL = "https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/user-guide/features/tool-gateway"
 
 
 def _cmd_status(args) -> int:

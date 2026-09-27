@@ -206,7 +206,7 @@ source ~/.bashrc
 # If you previously installed with sudo, clean up:
 sudo rm /usr/local/bin/galahad
 # Then re-run the standard installer
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
 ```
 
 ---
@@ -746,7 +746,7 @@ Skills with very long descriptions are truncated to 40 characters in the Telegra
 
 1. Install Galahad Agent on the new machine:
    ```bash
-   curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+   curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
    ```
 
 2. On the **source machine**, create a full backup:

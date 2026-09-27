@@ -100,7 +100,7 @@ wsl --shutdown
 打开 WSL2 shell 后执行：
 
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
 source ~/.bashrc
 galahad
 ```

@@ -49,7 +49,7 @@ development environment on the same layout the CLI, updater, lazy dependency
 installer, gateway, and docs assume.
 
 ```bash
-curl -fsSL https://galahad-mamad.github.io/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | bash
 cd "${GALAHAD_HOME:-$HOME/.galahad}/galahad-agent"
 
 # Add dev/test extras on top of the standard install.

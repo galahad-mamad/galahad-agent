@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/galahad-mamad/galahad-agent/releases"><img src="https://img.shields.io/badge/Download-macOS%20%C2%B7%20Windows%20%C2%B7%20Linux-FFD700?style=for-the-badge" alt="Download"></a>
-  <a href="https://galahad-mamad.github.io/docs/"><img src="https://img.shields.io/badge/Docs-galahad--agent.galahad.dev-FFD700?style=for-the-badge" alt="Documentation"></a>
+  <a href="https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/"><img src="https://img.shields.io/badge/Docs-galahad--agent.galahad.dev-FFD700?style=for-the-badge" alt="Documentation"></a>
   <a href="https://discord.gg/galahad-mamad"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
   <a href="https://github.com/galahad-mamad/galahad-agent/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT"></a>
 </p>
@@ -204,7 +204,7 @@ Remove-Item -Recurse -Force "$env:LOCALAPPDATA\galahad\galahad-agent\venv"
 ## Community
 
 - 💬 [Discord](https://discord.gg/galahad-mamad)
-- 📖 [Documentation](https://galahad-mamad.github.io/docs/)
+- 📖 [Documentation](https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/)
 - 🐛 [Issues](https://github.com/galahad-mamad/galahad-agent/issues)
 
 ---

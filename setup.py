@@ -34,7 +34,7 @@ _IN_NIX_BUILD = os.environ.get("GALAHAD_NIX_BUILD") == "1"
 _BLOCK_MESSAGE = (
     "Building wheels or sdists for galahad-agent is not supported.\n"
     "Galahad is distributed via the shell installer, Docker image, or Nix.\n"
-    "See: https://galahad-mamad.github.io/docs/getting-started/installation\n"
+    "See: https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/getting-started/installation\n"
     "\n"
     "If you are developing, use an editable install instead:\n"
     "  uv sync          # or: uv pip install -e .\n"

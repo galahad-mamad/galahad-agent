@@ -83,7 +83,7 @@ galahad webhook subscribe todoist-galahad \
   --deliver telegram --deliver-chat-id "12345"
 ```
 
-Full filter syntax: https://galahad-mamad.github.io/docs/user-guide/messaging/webhooks#payload-filters
+Full filter syntax: https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/user-guide/messaging/webhooks#payload-filters
 
 ### List subscriptions
 ```bash

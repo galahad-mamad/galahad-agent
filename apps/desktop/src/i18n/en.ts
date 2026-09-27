@@ -736,7 +736,7 @@ export const en: Translations = {
       sshErrHostKey:
         'The host key has CHANGED since you last connected. Verify this is expected, then run ssh-keygen -R <host> and reconnect.',
       sshErrNotInstalled:
-        'Galahad is not installed on the remote host. Install it there (curl -fsSL https://galahad-mamad.github.io/install.sh | sh) or set the Galahad path.',
+        'Galahad is not installed on the remote host. Install it there (curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | sh) or set the Galahad path.',
       sshErrPlatform:
         'Unsupported remote platform. Galahad Desktop SSH mode supports Linux, macOS, and Windows remote hosts.',
       sshErrTimeout: 'SSH connection timed out. The host may be unreachable or asleep.',

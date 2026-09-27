@@ -204,7 +204,7 @@ async function locateGalahad(ssh, remoteGalahadPath) {
 
   const err: any = new Error(
     'Galahad is not installed on the remote host (could not find a `galahad` executable). ' +
-      'Install it on the remote with:  curl -fsSL https://galahad-mamad.github.io/install.sh | sh  ' +
+      'Install it on the remote with:  curl -fsSL https://raw.githubusercontent.com/galahad-mamad/galahad-agent/main/scripts/install.sh | sh  ' +
       '— or set the Galahad path explicitly in the SSH connection settings.'
   )
 

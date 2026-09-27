@@ -3,7 +3,7 @@
   "updated_at": "2026-08-03T22:03:15Z",
   "metadata": {
     "source": "galahad-agent repo",
-    "docs": "https://galahad-mamad.github.io/docs/reference/model-catalog"
+    "docs": "https://github.com/galahad-mamad/galahad-agent/tree/main/website/docs/reference/model-catalog"
   },
   "providers": {
     "openrouter": {
